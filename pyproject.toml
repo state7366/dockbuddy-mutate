@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dockbuddy-mutate"
+version = "0.1.0"
+description = "DockBuddy 蛋白定点突变建模(PDBFixer + OpenMM 侧链替换 + 局部松弛)，解耦版本"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "DockBuddy" }]
+keywords = ["protein", "point-mutation", "pdbfixer", "openmm", "modeling"]
+dependencies = [
+    "dockbuddy-common>=0.1.0",
+]
+
+[project.optional-dependencies]
+openmm = ["pdbfixer", "openmm"]
+
+[project.urls]
+Repository = "https://pypi.cnb.cool/vcinex/bioinfo/-/packages/simple"
+
+[tool.setuptools.packages.find]
+include = ["dockbuddy_mutate*"]
