@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dockbuddy-mutate"
-version = "0.1.1"
+version = "0.1.2"
 description = "DockBuddy 蛋白定点突变建模(PDBFixer + OpenMM 侧链替换 + 局部松弛)，解耦版本"
 readme = "README.md"
 requires-python = ">=3.8"
